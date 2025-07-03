@@ -37,13 +37,14 @@ uint8_t requestedOxigen = 0;
 uint8_t request_oxigen_active = 0;
 uint8_t currentOxigen = 0;
 static const char *default_topics_t2[] = {
-    "incubator/desired_oxigen_lvl"
+    "incubator/desired_oxygen_lvl"
 };
 #define DEFAULT_TOPICS_COUNT_T2  (sizeof(default_topics_t2) / sizeof(default_topics_t2[0]))
 
 // Board 3
 static const char *default_topics_t3[] = {
-    "incubator/desired_oxigen_lvl"
+		"incubator/oxygen_lvl",
+		"tank/oxygen_lvl"
 };
 #define DEFAULT_TOPICS_COUNT_T3  (sizeof(default_topics_t3) / sizeof(default_topics_t3[0]))
 
@@ -58,7 +59,7 @@ static void ADCTask_B1(void *pvParameters) {
 	uint32_t raw;
 	uint8_t pct;
 	char msg[MAX_PAYLOAD_LEN];
-	const char *adc_topic = "tank/oxygen_level";
+	const char *adc_topic = "tank/oxygen_lvl";
 	const char *tank_state = "tank/fill_state";
 	while (1) {
 		if (xSemaphoreTake(xADCSem, portMAX_DELAY) == pdTRUE) {
@@ -116,7 +117,7 @@ static void ADCTask_B2(void *pvParameters) {
 	uint32_t raw;
 	uint8_t pct;
 	char msg[MAX_PAYLOAD_LEN];
-	const char *adc_topic = "incubator/oxigen_lvl";
+	const char *adc_topic = "incubator/oxygen_lvl";
 	while (1) {
 		if (xSemaphoreTake(xADCSem, portMAX_DELAY) == pdTRUE) {
 			ADC_DoSoftwareTrigger(DEMO_ADC_BASE);
@@ -150,7 +151,7 @@ static void mqtt_message_recevie_task_B2(void *pvParameters) {
 	MqttMsg_t msg;
 	while (1) {
 		if (xQueueReceive(xMqttMsgQueue, &msg, portMAX_DELAY) == pdTRUE) {
-			if (strcmp(msg.topic, "incubator/desired_oxigen_lvl") == 0) {
+			if (strcmp(msg.topic, "incubator/desired_oxygen_lvl") == 0) {
 
 				requestedOxigen = (uint8_t) atoi(msg.payload);
 
@@ -163,9 +164,29 @@ static void mqtt_message_recevie_task_B3(void *pvParameters) {
 	MqttMsg_t msg;
 	while (1) {
 		if (xQueueReceive(xMqttMsgQueue, &msg, portMAX_DELAY) == pdTRUE) {
-			if (strcmp(msg.topic, "incubator/desired_oxigen_lvl") == 0) {
+			if (strcmp(msg.topic, "incubator/oxygen_lvl") == 0) {
+				if(atoi(msg.payload)<20){
+					mqtt_send_message("alarm/oxygen_lvl", "Incubadora: oxigeno bajo");
+	                mqtt_send_message("incubator/alarm", "ON");
 
-				requestedOxigen = (uint8_t) atoi(msg.payload);
+				}
+				else
+				{
+					mqtt_send_message("alarm/oxygen_lvl", "Incubadora: oxigeno normal");
+	                mqtt_send_message("incubator/alarm", "OFF");
+
+				}
+			}
+			else if (strcmp(msg.topic, "tank/oxygen_lvl") == 0) {
+				if(atoi(msg.payload)<20) {
+	                mqtt_send_message("alarm/oxygen_lvl", "Tanque: oxigeno bajo");
+	                mqtt_send_message("tank/alarm", "ON");
+
+				}
+	            else{
+	                mqtt_send_message("alarm/oxygen_lvl", "Tanque: oxigeno normal");
+	                mqtt_send_message("tank/alarm", "OFF");
+				}
 
 			}
 		}
@@ -181,7 +202,7 @@ void suscribe_to_board_topics(void){
 	}else if (BOARD_2 == selected_board){
 		mqtt_set_subscribe_topics(default_topics_t2, DEFAULT_TOPICS_COUNT_T2);
 	}else if(BOARD_3 == selected_board){
-
+		mqtt_set_subscribe_topics(default_topics_t3, DEFAULT_TOPICS_COUNT_T3);
 	}
 
 }
@@ -193,8 +214,8 @@ void tasks_create(void){
 	}else if(BOARD_2 == selected_board){
 		xTaskCreate(ADCTask_B2, "ADC", ADC_TASK_STACK, NULL, ADC_TASK_PRIORITY, NULL);
 		xTaskCreate(mqtt_message_recevie_task_B2, "mqtt_message_recevie_task", configMINIMAL_STACK_SIZE + 50, NULL, tskIDLE_PRIORITY + 1, NULL);
-
 	}else if(BOARD_3 == selected_board){
+		xTaskCreate(mqtt_message_recevie_task_B3, "mqtt_message_recevie_task", configMINIMAL_STACK_SIZE + 50, NULL, tskIDLE_PRIORITY + 1, NULL);
 
 	}
 }

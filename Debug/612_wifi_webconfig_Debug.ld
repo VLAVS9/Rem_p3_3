@@ -6,7 +6,7 @@
  * Generated linker script file for RW612
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v25.6 [Build 136] [2025-06-27] on 3 jul. 2025 10:28:41
+ * MCUXpresso IDE v25.6 [Build 136] [2025-06-27] on 3 jul. 2025 15:49:47
  */
 
 INCLUDE "612_wifi_webconfig_Debug_library.ld"

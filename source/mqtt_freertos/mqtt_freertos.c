@@ -497,9 +497,8 @@ void mqtt_freertos_run_thread(struct netif *netif)
     if (mqtt_client == NULL)
     {
         PRINTF("mqtt_client_new() failed.\r\n");
-        while (1)
-        {
-        }
+        while (1);
+
     }
 
     generate_client_id();
