@@ -1,0 +1,13 @@
+../wifi/wifidriver/mlan_11ax.c:49:6:wlan_check_ap_11ax_twt_supported	16	static
+../wifi/wifidriver/mlan_11ax.c:78:6:wlan_check_11ax_twt_supported	32	static
+../wifi/wifidriver/mlan_11ax.c:132:7:wlan_fill_he_cap_tlv	32	static
+../wifi/wifidriver/mlan_11ax.c:182:5:wlan_cmd_append_11ax_tlv	32	static
+../wifi/wifidriver/mlan_11ax.c:234:6:wlan_update_11ax_cap	32	static
+../wifi/wifidriver/mlan_11ax.c:337:7:wlan_11ax_bandconfig_allowed	16	static
+../wifi/wifidriver/mlan_11ax.c:380:13:wlan_11ax_ioctl_cmd	48	static
+../wifi/wifidriver/mlan_11ax.c:429:13:wlan_11ax_cfg_ioctl	24	static
+../wifi/wifidriver/mlan_11ax.c:460:5:wlan_cmd_11ax_cfg	40	static
+../wifi/wifidriver/mlan_11ax.c:502:13:wlan_ret_11ax_cfg	48	static
+../wifi/wifidriver/mlan_11ax.c:580:13:wlan_cmd_twt_cfg	56	static
+../wifi/wifidriver/mlan_11ax.c:667:13:wlan_cmd_11ax_cmd	40	static
+../wifi/wifidriver/mlan_11ax.c:711:13:wlan_ret_11ax_cmd	64	static

@@ -1,0 +1,16 @@
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/wifi/incl/port/net/wm_net.h:515:20:net_is_ip_or_ipv6	16	static
+../wifi/port/net/wifi_netif.c:190:13:register_interface	16	static
+../wifi/port/net/wifi_netif.c:232:13:deliver_packet_above	24	static
+../wifi/port/net/wifi_netif.c:379:21:gen_pbuf_from_data	24	static
+../wifi/port/net/wifi_netif.c:407:13:process_data_packet	72	static
+../wifi/port/net/wifi_netif.c:753:6:handle_data_packet	16	static
+../wifi/port/net/wifi_netif.c:779:6:handle_amsdu_data_packet	24	static
+../wifi/port/net/wifi_netif.c:794:6:handle_deliver_packet_above	32	static
+../wifi/port/net/wifi_netif.c:802:6:wrapper_net_is_ip_or_ipv6	16	static
+../wifi/port/net/wifi_netif.c:815:13:low_level_init	40	static
+../wifi/port/net/wifi_netif.c:872:14:low_level_output	80	static
+../wifi/port/net/wifi_netif.c:1098:5:net_wifi_pkt_fwd	16	static
+../wifi/port/net/wifi_netif.c:1138:14:igmp_mac_filter	56	static
+../wifi/port/net/wifi_netif.c:1265:14:mld_mac_filter	56	static
+../wifi/port/net/wifi_netif.c:1393:7:lwip_netif_init	24	static
+../wifi/port/net/wifi_netif.c:1440:7:lwip_netif_uap_init	24	static

@@ -1,0 +1,12 @@
+../drivers/fsl_imu.h:391:20:IMU_LockSendFifo	16	static
+../drivers/fsl_imu.h:421:20:IMU_SetSendFifoWaterMark	24	static
+../drivers/fsl_imu.h:448:24:IMU_GetSendFifoEmptySpace	16	static
+../drivers/fsl_imu.c:42:10:IMU_Init	24	static
+../drivers/fsl_imu.c:82:6:IMU_Deinit	16	static
+../drivers/fsl_imu.c:110:9:IMU_SendMsgsBlocking	40	static
+../drivers/fsl_imu.c:199:9:IMU_TrySendMsgs	40	static
+../drivers/fsl_imu.c:283:9:IMU_TryReceiveMsgs	48	static
+../drivers/fsl_imu.c:354:9:IMU_ReceiveMsgsBlocking	48	static
+../drivers/fsl_imu.c:422:9:IMU_SendMsgPtrBlocking	24	static
+../drivers/fsl_imu.c:467:6:IMU_FlushSendFifo	16	static
+../drivers/fsl_imu.c:479:10:IMU_GetStatusFlags	24	static

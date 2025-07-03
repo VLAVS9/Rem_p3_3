@@ -1,0 +1,16 @@
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/wifi/incl/port/net/wm_net.h:492:20:net_inet_ntoa	24	static
+../edgefast_wifi/source/wpl_nxp.c:94:12:WPL_map_event	16	static
+../edgefast_wifi/source/wpl_nxp.c:131:5:wlan_event_callback	24	static
+../edgefast_wifi/source/wpl_nxp.c:221:11:WPL_Init	16	static
+../edgefast_wifi/source/wpl_nxp.c:262:11:WPL_Start	40	static
+../edgefast_wifi/source/wpl_nxp.c:310:11:WPL_Stop	16	static
+../edgefast_wifi/source/wpl_nxp.c:337:11:WPL_Start_AP	680	static
+../edgefast_wifi/source/wpl_nxp.c:449:11:WPL_Stop_AP	32	static
+../edgefast_wifi/source/wpl_nxp.c:507:12:WLP_process_results	256	static
+../edgefast_wifi/source/wpl_nxp.c:600:7:WPL_Scan	32	static
+../edgefast_wifi/source/wpl_nxp.c:641:11:WPL_AddNetworkWithSecurity	680	static
+../edgefast_wifi/source/wpl_nxp.c:724:11:WPL_AddNetwork	24	static
+../edgefast_wifi/source/wpl_nxp.c:729:11:WPL_RemoveNetwork	32	static
+../edgefast_wifi/source/wpl_nxp.c:757:11:WPL_Join	40	static
+../edgefast_wifi/source/wpl_nxp.c:828:11:WPL_Leave	32	static
+../edgefast_wifi/source/wpl_nxp.c:883:11:WPL_GetIP	112	static

@@ -1,0 +1,3 @@
+../source/main.c:32:13:ADCTimerCallback	16	static
+../source/main.c:35:6:start_adc_timer	24	static
+../source/main.c:40:5:main	24	static

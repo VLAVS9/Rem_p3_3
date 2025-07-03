@@ -1,0 +1,4 @@
+../source/http_server.c:19:6:cgi_get_varval	40	static
+../source/http_server.c:57:6:format_post_data	24	static
+../source/http_server.c:68:6:cgi_urldecode	24	static
+../source/http_server.c:91:6:http_srv_task	88	static

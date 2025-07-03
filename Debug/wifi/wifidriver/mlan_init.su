@@ -1,0 +1,10 @@
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/wifi/wifidriver/incl/mlan_util.h:51:22:util_init_list	16	static
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/wifi/wifidriver/incl/mlan_util.h:66:22:util_init_list_head	24	static
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/wifi/wifidriver/incl/mlan_util.h:302:22:util_scalar_init	24	static
+../wifi/wifidriver/mlan_init.c:78:13:wlan_allocate_adapter	16	static
+../wifi/wifidriver/mlan_init.c:104:6:wlan_clear_scan_bss	8	static
+../wifi/wifidriver/mlan_init.c:130:13:wlan_init_priv	24	static
+../wifi/wifidriver/mlan_init.c:276:8:wlan_init_adapter	16	static
+../wifi/wifidriver/mlan_init.c:416:13:wlan_init_lock_list	40	static
+../wifi/wifidriver/mlan_init.c:517:13:wlan_init_fw	32	static
+../wifi/wifidriver/mlan_init.c:557:8:wlan_free_adapter	16	static

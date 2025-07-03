@@ -1,0 +1,12 @@
+../lwip/src/apps/httpsrv/httpsrv_task.c:41:6:httpsrv_server_task	72	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:204:13:httpsrv_session_task	32	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:238:32:httpsrv_ses_alloc	24	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:305:13:httpsrv_ses_free	16	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:345:12:httpsrv_ses_init	32	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:378:13:httpsrv_ses_close	16	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:421:6:httpsrv_http_process	40	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:529:12:httpsrv_req_read	56	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:667:26:httpsrv_req_do	48	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:781:26:httpsrv_response	24	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:837:20:httpsrv_ses_set_state	16	static
+../lwip/src/apps/httpsrv/httpsrv_task.c:861:13:httpsrv_plugin_run	24	static

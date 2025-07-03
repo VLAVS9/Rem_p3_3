@@ -1,0 +1,4 @@
+../wifi/wifidriver/mlan_action.c:44:20:wlan_process_mgmt_radio_measurement_action	48	static
+../wifi/wifidriver/mlan_action.c:100:20:wlan_process_mgmt_wnm_action	48	static
+../wifi/wifidriver/mlan_action.c:129:20:wlan_process_mgmt_unprotect_wnm_action	40	static
+../wifi/wifidriver/mlan_action.c:161:13:wlan_process_mgmt_action	48	static

@@ -1,0 +1,9 @@
+../wifi/wifidriver/mlan_uap_cmdevent.c:36:20:wlan_uap_cmd_ap_config	128	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:383:20:wlan_uap_cmd_sys_configure	88	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:567:20:wlan_uap_cmd_snmp_mib	72	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:693:20:wlan_uap_cmd_sta_deauth	32	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:922:6:wlan_check_sta_capability	72	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:994:13:wlan_check_11B_support_rates	24	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:1020:20:wlan_uap_cmd_add_station	88	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:1277:20:wlan_uap_cmd_bss_start	24	static
+../wifi/wifidriver/mlan_uap_cmdevent.c:1316:13:wlan_ops_uap_prepare_cmd	48	static

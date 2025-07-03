@@ -1,0 +1,11 @@
+../utilities/debug_console/fsl_debug_console.c:425:10:DbgConsole_ReadOneCharacter	24	static
+../utilities/debug_console/fsl_debug_console.c:497:5:DbgConsole_SendData	24	static
+../utilities/debug_console/fsl_debug_console.c:550:5:DbgConsole_SendDataReliable	24	static
+../utilities/debug_console/fsl_debug_console.c:631:5:DbgConsole_ReadLine	24	static
+../utilities/debug_console/fsl_debug_console.c:697:5:DbgConsole_ReadCharacter	24	static
+../utilities/debug_console/fsl_debug_console.c:774:10:DbgConsole_Init	56	static
+../utilities/debug_console/fsl_debug_console.c:945:10:DbgConsole_EnterLowpower	16	static
+../utilities/debug_console/fsl_debug_console.c:956:10:DbgConsole_ExitLowpower	16	static
+../utilities/debug_console/fsl_debug_console.c:967:10:DbgConsole_Deinit	8	static
+../utilities/debug_console/fsl_debug_console.c:1374:27:_write	24	static
+../utilities/debug_console/fsl_debug_console.c:1395:27:_read	32	static

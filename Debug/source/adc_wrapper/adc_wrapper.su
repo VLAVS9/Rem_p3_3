@@ -1,0 +1,6 @@
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/CMSIS/core_cm33.h:2358:22:__NVIC_EnableIRQ	16	static
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/drivers/fsl_common_arm.h:672:24:EnableIRQ	24	static
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/drivers/fsl_adc.h:751:20:ADC_EnableInterrupts	16	static
+/Users/miguelvladimirvargassanchez/Documents/MCUXpressoIDE_25.6.136/workspace/612_wifi_webconfig/drivers/fsl_adc.h:792:20:ADC_ClearStatusFlags	16	static
+../source/adc_wrapper/adc_wrapper.c:11:6:adc0_init	16	static
+../source/adc_wrapper/adc_wrapper.c:39:6:adc0_enable_interrupts	8	static
